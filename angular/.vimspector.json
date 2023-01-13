@@ -1,0 +1,21 @@
+{
+  "configurations": {
+    "chrome": {
+      "adapter": "chrome",
+      "configuration": {
+        "request": "launch",
+        "url": "http://localhost:4200/",
+        "webRoot": "${workspaceRoot}"
+      }
+    },
+    "firefox": {
+      "adapter": "firefox",
+      "configuration": {
+        "request": "launch",
+        "url": "http://localhost:4200/",
+        "webRoot": "${workspaceRoot}",
+        "reAttach": true
+      }
+    }
+  }
+}

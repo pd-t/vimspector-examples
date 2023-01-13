@@ -1,0 +1,17 @@
+{
+  "configurations": {
+    "Python": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "default": true,
+      "configuration": {
+        "type": "python",
+        "console": "externalTerminal",
+        "request": "launch",
+        "program": "${workspaceRoot}/main.py",
+        "stopOnEntry": false,
+        "cwd": "${workspaceRoot}"
+      }
+    }
+  }
+}

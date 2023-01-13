@@ -1,0 +1,31 @@
+{
+  "configurations": {
+    "tsc": {
+      "adapter": "vscode-node",
+      "configuration": {
+        "name": "tsc",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceRoot}/index.ts",
+        "cwd": "${workspaceRoot}",
+        "console": "integratedTerminal",
+        "outFiles": [
+          "${workspaceFolder}/out/**/*.js"
+        ]
+      }
+    },
+    "ts-node": {
+      "adapter": "vscode-node",
+      "configuration": {
+        "name": "tsc",
+        "type": "node",
+        "request": "launch",
+        "args": ["${relativeFile}"],
+        "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+        "sourceMaps": true,
+        "cwd": "${workspaceRoot}",
+        "protocol": "inspector"
+      }
+    }
+  }
+}
